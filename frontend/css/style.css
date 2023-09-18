@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.c3-line {
+    fill: none;
+}
+
+#chart {
+    margin-top: 10px;
+}
+
+#c3_chart {
+    position: relative;
+    z-index: 0;
+}
+
+/* Hardcoded lines */
+.grid-line {
+    line-height: 0.25px;
+    stroke: #9f9a9a;
+    opacity: 50%;
+}
+
+.good-line {
+    stroke-dasharray: 5 5;
+    stroke: #28981e;
+    color: #28981e;
+}
+
+.bad-line {
+    stroke-dasharray: 5 5;
+    stroke: #f51b1b;
+    color: #f51b1b;
+}
+
+/* Stroke */
+.c3-line-DesktopLabData {
+    stroke-width: 1px;
+}
+
+.c3-line-MobileLabData {
+    stroke-width: 1px;
+}
+
+.c3-line-MobileFieldData {
+    stroke-width: 2px;
+}
+
+.c3-line-DesktopFieldData {
+    stroke-width: 2px;
+}
+
+/* Points */
+.c3-circles-DesktopLabData circle {
+    fill: orange;
+}
+
+/* Tooltip stylings */
+.c3-tooltip-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.c3-tooltip-container td.name {
+    font-weight: bold;
+}
+
+.c3-tooltip-container td.value {
+    text-align: right;
+}
+
+.c3-tooltip-container th {
+    font-weight: normal;
+    text-align: left;
+}
+
+.c3-tooltip-container th,
+.c3-tooltip-container td {
+    padding: 4px;
+}
+
+.c3-tooltip-container tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.c3-tooltip-container tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
